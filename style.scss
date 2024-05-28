@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Avenir Next', 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    color: gray;
+}
+ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+    li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 0.5vw;
+        
+        a {
+            display: block; box-sizing: border-box;
+            width: 55vw; height: 120px;
+            background-color: aliceblue;
+            position: relative; left: 0;
+            text-decoration: none;
+            font-size: 40px;
+            padding: 30px; padding-left: 40px;
+            border-radius: 100px;
+        }
+    }
+}
+
+#search {
+    border-radius: 100px; border-style: outset; border-top: 10px;
+    background-color: white; box-shadow: 4px 10px 20px 0px gray;
+    margin: 3%; margin-top: 4%;
+    padding: 3% 0%;
+}
+#sectionHeader {
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: 4cqh;
+    margin-bottom: 1cqh;
+}
+#trigger {
+    display: none;
+}
+
+nav {
+    background-color: white; opacity: 95%;
+    width: 60vw; height: 100vh;
+    padding: 10px 1cqw;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+    position: absolute;
+    top: 0;
+    left: -60vw;
+
+    transition: left 0.3s ease-in-out;
+
+    .trigger:checked ~ & {
+        left: 0;
+    }
+}
+.hamburger {
+    width: 80px; height: 80px;
+    background: white;
+    padding: 20px 15px;
+    border-radius: 100px;
+    box-shadow: 4px 10px 20px 0px gray;
+
+    cursor: pointer;
+
+    span {
+        height: 8px;
+        width: 50px;
+        background: gray;
+        margin-bottom: 8px;
+        border-radius: 100px;
+
+        display: block;
+        position: relative;
+        transition: height 0.5s ease-in-out, opacity 0.2s ease-in-out;
+
+        .trigger:checked ~ &:first-child {
+            height: 40px;
+        }
+        .trigger:checked ~ &:last-child {
+            opacity: 0;
+        }
+        .trigger:checked ~ &:nth-child(2) {
+            opacity: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
