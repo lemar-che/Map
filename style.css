@@ -5,6 +5,7 @@
 
 body {
   background-color: aliceblue;
+  display: block;
   color: gray;
 }
 
@@ -35,7 +36,7 @@ ul li a {
   border-radius: 100px;
 }
 
-#search {
+.searchBar {
   border-radius: 100px;
   border-style: outset;
   border-top: 10px;
@@ -43,36 +44,28 @@ ul li a {
   box-shadow: 4px 10px 20px 0px gray;
   margin: 3%;
   margin-top: 4%;
-  padding: 3% 0%;
+  padding: 0 40px;
+  align-items: center;
+  height: 160px;
+  display: flex;
 }
 
-#sectionHeader {
+.searchBar:focus-within {
+  background-color: #fffffa;
+}
+
+.search-input {
   font-size: 60px;
-  font-weight: bolder;
-  margin-top: 4cqh;
-  margin-bottom: 1cqh;
+  margin: 0 40px;
+  height: 140px;
+  width: 660px;
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
-#trigger {
-  display: none;
-}
-
-nav {
-  background-color: white;
-  opacity: 95%;
-  width: 60vw;
-  height: 100vh;
-  padding: 10px 1cqw;
-  border-top-right-radius: 60px;
-  border-bottom-right-radius: 60px;
-  position: absolute;
-  top: 0;
-  left: -60vw;
-  transition: left 0.3s ease-in-out;
-}
-
-.trigger:checked ~ nav {
-  left: 0;
+.search-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .hamburger {
@@ -82,6 +75,8 @@ nav {
   padding: 20px 15px;
   border-radius: 100px;
   box-shadow: 4px 10px 20px 0px gray;
+  position: relative;
+  float: left;
   cursor: pointer;
 }
 
@@ -110,4 +105,33 @@ nav {
 
 .hamburger span:last-child {
   margin-bottom: 0;
+}
+
+nav {
+  background-color: white;
+  opacity: 95%;
+  width: 60vw;
+  height: 100vh;
+  padding: 10px 1cqw;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  position: absolute;
+  top: 0;
+  left: -60vw;
+  transition: left 0.3s ease-in-out;
+}
+
+.trigger:checked ~ nav {
+  left: 0;
+}
+
+#sectionHeader {
+  font-size: 60px;
+  font-weight: bolder;
+  margin-top: 4cqh;
+  margin-bottom: 1cqh;
+}
+
+#trigger {
+  display: none;
 }

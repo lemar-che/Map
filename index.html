@@ -7,68 +7,69 @@
 
   <body>
     <script src="script.js"></script>
-    <div id="search">
+    <form>
+      <div class="searchBar">
 
-      <table style="padding: 0% 5cqw; width: 100%;">
+    
+        <label for="trigger">
+          <input type="checkbox" class="trigger" id="trigger">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav>
+            <table>
+              <td style="padding-bottom:3.5%;">
+                <h1>PHS Map</h1>
+              </td>
+              <td style="padding-bottom:0%;">
+                <h4 style="font-style: italic;">&nbsp;by SKriBL</h4>
+              </td>
+            </table>
+            <hr>
+            <ul>
+              <li>
+                <div id="sectionHeader">
+                  PHS Quick Links
+                  <hr>
+                </div>
+                <ul>
+                  <li><a href="https://md-mcps-psv.edupoint.com/PXP2_Login_Student.aspx?regenerateSessionId=True">StudentVUE</a></li>
+                  <li><a href="https://md-mcps-psv.edupoint.com/PXP2_Login_Parent.aspx?regenerateSessionId=True">ParentVUE</a></li>
+                  <li><a href="https://www.montgomeryschoolsmd.org/schools/poolesvillehs/staff/directory/">Staff Directory</a></li>
+                  <li><a href="https://defygg.github.io/poolesvilleschedule/">Bell Schedule</a></li>
+                </ul>
+              </li>
+              
 
-        <td style="text-align: left;">
-          <label for="trigger">
-            <input type="checkbox" class="trigger" id="trigger">
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <nav>
-              <table>
-                <td style="padding-bottom:3.5%;">
-                  <h1>PHS Map</h1>
-                </td>
-                <td style="padding-bottom:0%;">
-                  <h4 style="font-style: italic;">&nbsp;by SKriBL</h4>
-                </td>
-              </table>
-              <hr>
-              <ul>
-                <li>
-                  <div id="sectionHeader">
-                    Accessibility
-                    <hr>
-                  </div>
-                  <ul>
-                    <li><a>Audible Directions</a></li>
-                    <li><a>Help</a></li>
-                  </ul>
-                </li>
-                
+              <li>
+                <div id="sectionHeader">
+                  Accessibility
+                  <hr>
+                </div>
+                <ul>
+                  <li><a href="https://www.google.com/">Audible Directions</a></li>
+                  <li><a href="https://www.google.com/">Help</a></li>
+                </ul>
+              </li>
+              
+              <li style="position: absolute; bottom: 300px; left: 0;">
+                <div style="display: block; background-color: aliceblue; width: 60vw; height: 120px;">
+                  <a href="https://www.google.com/">LOG IN</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </label>
 
-                <li>
-                  <div id="sectionHeader">
-                    PHS Quick Links
-                    <hr>
-                  </div>
-                  <ul>
-                    <li><a href="https://md-mcps-psv.edupoint.com/PXP2_Login_Student.aspx?regenerateSessionId=True">StudentVUE</a></li>
-                    <li><a href="https://md-mcps-psv.edupoint.com/PXP2_Login_Parent.aspx?regenerateSessionId=True">ParentVUE</a></li>
-                    <li><a href="https://www.montgomeryschoolsmd.org/schools/poolesvillehs/staff/directory/">Staff Directory</a></li>
-                    <li><a href="https://defygg.github.io/poolesvilleschedule/">Bell Schedule</a></li>
-                  </ul>
-                </li>
-                
-              </ul>
-            </nav>
-          </label>
-        </td>
+        <input class="search-input" type="search" placeholder="Search for a room">
+        <img src="searchIcon.png" width="9%">
 
-        <td style="text-align: right;">
-          <img src="searchIcon.png" width="12%">
-                <!-- <div style="width: 60px; height: 60px; border: solid gray 3px; border-radius: 100px;"></div>
-      <span style="width: 30px; height: 3px; background-color: gray; display: block; border-radius: 100px; transform: rotate(45deg); position: relative; left: 4cqw;"></span> -->
-        </td>
+      </div>
+    </form>
 
-      </table>
-
-    </div>
-
+    <!-- add action to the form later action="" -->
+    <form></form>
   </body>
 </html>
